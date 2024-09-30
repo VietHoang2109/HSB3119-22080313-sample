@@ -1,4 +1,4 @@
 # Title of my website
 
 Write anything here
-![](images/bird.jpg)
+![](/images/IMG_1072.JPG)
