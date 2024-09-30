@@ -1,4 +1,6 @@
 # Title of my website
 
-Write anything here
-# ![](images/BEBU0894.JPG)
+## Level 2 heading
+School
+
+ ![](images/BEBU0894.JPG)
