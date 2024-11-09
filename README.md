@@ -95,6 +95,7 @@ Child = daughter, son, stepdaughter, stepson
 Some children travelled only with a nanny, therefore parch=0 for them.
 
 2.2.2. Variable Selection
+<br>
 There are many variables provided, but in the model, we decide to use four independent variables which is Sex, Age, Pclass, Embarked. For dependent variable, we will use Survived for our model. 
 The reason we choose these variables is based on three filters. 
 First, we check the null value of each column and it turn out there are 177 rows of Age column, 687 rows of Cabin column and 2 rows of Embarkes columns is missing. While we can ‘fix’ Age and Embarked columns, we do not think that is possible to use a column with approximately 80% missing data like Cabin.
@@ -110,14 +111,68 @@ For Embarked, there were only 2 missing data, so we decide to drop it. We also t
 For Sex column, we will convert the male/female into 1/0 as model we use from sckitlearn only take numerical input.
 
 2.4. Data Visualizing
+<br>
 2.4.1. Pie chart about Sex and Survived
+<br>
 This chart was made to compare the percentage of female and male in the survivor.
 <br>
 ![image](https://github.com/user-attachments/assets/c24de14d-1e92-48da-a488-18c2f90a8130)
 <br>
 It can be told from the chart that if someone is female, she will have chance to survive in the Titanic incident.
 While the chart did not indicate that if you are a male, the percentage that you will live is 20.3%, it highlights the significant difference in the percent of female to male in the survival data.
+<br>
 2.4.2. Bar Chart about PClass and Survived
 
 ![image](https://github.com/user-attachments/assets/e06f85cb-73a1-4959-bee1-c8fd22821133)
-.    km
+<br>
+This bar chart was made to compare the survival rate of each class in the Pclass with:
+•	1 - First class (the highest class)
+•	2 - Second class
+•	3 - Third class.
+It is clearly to see the higher the class ticket that we bought, the more survival rate that we will have.
+2.4.3 Density plot
+![image](https://github.com/user-attachments/assets/8d2ac81b-5d74-4094-b65d-5dbf48f65ab7)
+<br>
+The chart shows the age distribution of passengers who survived and those who did not survive in the Titanic case.
+Firstly, 80 years old and 4 months old are the oldest and youngest passenger on the ship, with the average passenger's age is nearly 30. From the chart, we can see that the survival probabilities from the age 40 to 60 are similar for both groups. The peak on 'Survived = 1' shows the range is less than the 'Survived = 0' one, which means people who are in the age of 20 to 30 have less chance to survive than expected. We could see the curve of 'Survived=1' is moved towards younger ages than 'Survived=0', it means that younger passengers have higher chance to survive.
+<br>
+2.4.4. Line plots
+<br>
+![image](https://github.com/user-attachments/assets/cbad19db-2e08-470f-9a79-58fd3d570ef1)
+<br>
+Mostly passenegers boarded from S, especially in Pclass = 3. Female passengers have better survival rate than male, especially in Pclass = 1 & 2. And the chart shows the survival rate of Pclass = 3 is the lowest chance to survive especially the embarked = S, which means it was about money they pay for. The survival in Embarked = Q only/mostly have passengers from Pclass=3, but men in this 'embarked' are unlukiest to survive.
+<br>
+2.5. Models Used
+For this project, two models were selected:
+1. Logistic regression model
+2. K nearest neighbor  
+The reason while we use these two models in this report instead of linear regression is that we realize our task is classification, which will give the outcome is categorical data not regression which will give a continous outcome.
+Before using this model, we used a pair plot to simply visualize the model.
+As we can see from the chart, most of the variables that we choose has a normal distribution. While age looks a little bit screwed, we think it is still acceptable.
+
+III. Result
+<br>
+3.1. Logistic Regression
+First, we want to discuss that in a real-life situation, to be predicted as alive but actually dead (False positive) or predicted as dead but actually alive (False negative) both have a serious impact but. In the first case, to be predicted as alive but actually dead might expand the cost for a rescuing mission more than it needed. While in the second case, the victim might not receive the rescue need, or the authority might not prepare enough resource for the rescuing misson. Personally, we think the false negative in this case is worst than the false positive.
+To minimize the false negative, we increased the threshold to 0.7. To come up with this number, we tried some other possibilities higher or lower than 0.7 and 0.7 is the number which give a low false negative while keeping the false positive acceptable. 
+After choosing a suitable threshold, we create the model, confusion matrix based on the model and visualizing it using a pie chart. As we can see, most of the chart is true positive and true negative, which give us a high accuracy (around 72.4%). False negative occupied 16.9% of the chart which is higher than False positive which is 10.7%. The f1 score, precision, specificity, recall, respectively is 0.69, 0.64, 0.71 and 0.74. We will discuss more about this after caculate the number of KNN model.
+<br>
+![image](https://github.com/user-attachments/assets/304c27d1-703f-4a10-ad0e-6e51af4a5140)
+<br>
+We also include the roc curve and caculate the auc which give us a result around 72.7% which we think is enough to predict the right value while not making too many minimal errors.
+<br>
+![image](https://github.com/user-attachments/assets/64918ae6-0025-4f46-aedb-7d91ada6e918)
+<br>
+We create a chart which showing the importance of all the variables that we choose for our model
+![image](https://github.com/user-attachments/assets/901ae7a6-f567-4e97-afff-e6c4f5243b7d)
+<br>
+*Note: All the variable is used in their absolute value to make it better for analysing.
+As we can see, Sex and Pclass has a big impact on the model and Age and Embarked seem to have less impact on the model. Futher discussion will be included in part IV of the report.
+
+3.2. KNN 
+For KNN model, we run a few tools to optimize the k values and the k value that we choose is 23.
+After testing the model, it gives us a confusion matrix that we will visualize by a heat map. 
+
+
+
+
