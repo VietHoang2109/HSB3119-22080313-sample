@@ -15,19 +15,66 @@ We will use the provided data which come from Kaggle which is a excel file Train
 2.2.1. Data dictionary
 <br>
 <table>
-| Cột 1      | Cột 2      | Cột 3      |
-|------------|------------|------------|
-| Hàng 1     | Dữ liệu 1  | Dữ liệu 2  |
-| Hàng 2     | Dữ liệu 3  | Dữ liệu 4  |
-| Hàng 3     | Dữ liệu 5  | Dữ liệu 6  |
-| Hàng 4     | Dữ liệu 7  | Dữ liệu 8  |
-| Hàng 5     | Dữ liệu 9  | Dữ liệu 10 |
-| Hàng 6     | Dữ liệu 11 | Dữ liệu 12 |
-| Hàng 7     | Dữ liệu 13 | Dữ liệu 14 |
-| Hàng 8     | Dữ liệu 15 | Dữ liệu 16 |
-| Hàng 9     | Dữ liệu 17 | Dữ liệu 18 |
-| Hàng 10    | Dữ liệu 19 | Dữ liệu 20 |
-| Hàng 11    | Dữ liệu 21 | Dữ liệu 22 |
+  <tr>
+    <th>Cột 1</th>
+    <th>Cột 2</th>
+    <th>Cột 3</th>
+  </tr>
+  <tr>
+    <td>Hàng 1</td>
+    <td>Dữ liệu 1</td>
+    <td>Dữ liệu 2</td>
+  </tr>
+  <tr>
+    <td>Hàng 2</td>
+    <td>Dữ liệu 3</td>
+    <td>Dữ liệu 4</td>
+  </tr>
+  <tr>
+    <td>Hàng 3</td>
+    <td>Dữ liệu 5</td>
+    <td>Dữ liệu 6</td>
+  </tr>
+  <tr>
+    <td>Hàng 4</td>
+    <td>Dữ liệu 7</td>
+    <td>Dữ liệu 8</td>
+  </tr>
+  <tr>
+    <td>Hàng 5</td>
+    <td>Dữ liệu 9</td>
+    <td>Dữ liệu 10</td>
+  </tr>
+  <tr>
+    <td>Hàng 6</td>
+    <td>Dữ liệu 11</td>
+    <td>Dữ liệu 12</td>
+  </tr>
+  <tr>
+    <td>Hàng 7</td>
+    <td>Dữ liệu 13</td>
+    <td>Dữ liệu 14</td>
+  </tr>
+  <tr>
+    <td>Hàng 8</td>
+    <td>Dữ liệu 15</td>
+    <td>Dữ liệu 16</td>
+  </tr>
+  <tr>
+    <td>Hàng 9</td>
+    <td>Dữ liệu 17</td>
+    <td>Dữ liệu 18</td>
+  </tr>
+  <tr>
+    <td>Hàng 10</td>
+    <td>Dữ liệu 19</td>
+    <td>Dữ liệu 20</td>
+  </tr>
+  <tr>
+    <td>Hàng 11</td>
+    <td>Dữ liệu 21</td>
+    <td>Dữ liệu 22</td>
+  </tr>
 </table>
 <br>
 *Note: 
