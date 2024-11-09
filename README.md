@@ -14,6 +14,7 @@ We will use the provided data which come from Kaggle which is a excel file Train
 
 2.2.1. Data dictionary
 <br>
+<table>
 | Cột 1      | Cột 2      | Cột 3      |
 |------------|------------|------------|
 | Hàng 1     | Dữ liệu 1  | Dữ liệu 2  |
@@ -27,6 +28,7 @@ We will use the provided data which come from Kaggle which is a excel file Train
 | Hàng 9     | Dữ liệu 17 | Dữ liệu 18 |
 | Hàng 10    | Dữ liệu 19 | Dữ liệu 20 |
 | Hàng 11    | Dữ liệu 21 | Dữ liệu 22 |
+</table>
 <br>
 *Note: 
 pclass: A proxy for socio-economic status (SES)
