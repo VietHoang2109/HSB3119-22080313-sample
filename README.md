@@ -18,59 +18,59 @@ We will use the provided data which come from Kaggle which is a excel file Train
 <br>
 <table>
   <tr>
-    <th>Cột 1</th>
-    <th>Cột 2</th>
-    <th>Cột 3</th>
+    <th>Variable</th>
+    <th>Definition</th>
+    <th>Key</th>
   </tr>
   <tr>
-    <td>Hàng 1</td>
-    <td>Dữ liệu 1</td>
-    <td>Dữ liệu 2</td>
+    <td>survival</td>
+    <td>Survival</td>
+    <td>0 = No, 1 = Yes</td>
   </tr>
   <tr>
-    <td>Hàng 2</td>
-    <td>Dữ liệu 3</td>
-    <td>Dữ liệu 4</td>
+    <td>pclass</td>
+    <td>Ticket class</td>
+    <td>1 = 1st, 2 = 2nd, 3 = 3rd</td>
   </tr>
   <tr>
-    <td>Hàng 3</td>
-    <td>Dữ liệu 5</td>
-    <td>Dữ liệu 6</td>
+    <td>sex</td>
+    <td>Sex</td>
+    <td></td>
   </tr>
   <tr>
-    <td>Hàng 4</td>
-    <td>Dữ liệu 7</td>
-    <td>Dữ liệu 8</td>
+    <td>Age</td>
+    <td>Age in years</td>
+    <td></td>
   </tr>
   <tr>
-    <td>Hàng 5</td>
-    <td>Dữ liệu 9</td>
-    <td>Dữ liệu 10</td>
+    <td>sibsp</td>
+    <td># of siblings / spouses aboard the Titanic</td>
+    <td></td>
   </tr>
   <tr>
-    <td>Hàng 6</td>
-    <td>Dữ liệu 11</td>
-    <td>Dữ liệu 12</td>
+    <td>parch </td>
+    <td># of parents / children aboard the Titanic</td>
+    <td></td>
   </tr>
   <tr>
-    <td>Hàng 7</td>
-    <td>Dữ liệu 13</td>
-    <td>Dữ liệu 14</td>
+    <td>ticket</td>
+    <td>Ticket number</td>
+    <td></td>
   </tr>
   <tr>
-    <td>Hàng 8</td>
-    <td>Dữ liệu 15</td>
-    <td>Dữ liệu 16</td>
+    <td>fare</td>
+    <td>Passenger fare</td>
+    <td></td>
   </tr>
   <tr>
-    <td>Hàng 9</td>
-    <td>Dữ liệu 17</td>
-    <td>Dữ liệu 18</td>
+    <td>cabin</td>
+    <td>Cabin number</td>
+    <td></td>
   </tr>
   <tr>
-    <td>Hàng 10</td>
-    <td>Dữ liệu 19</td>
-    <td>Dữ liệu 20</td>
+    <td>embarked</td>
+    <td>Port of Embarkation</td>
+    <td>C = Cherbourg, Q = Queenstown, S = Southampton</td>
   </tr>
   <tr>
     <td>Hàng 11</td>
