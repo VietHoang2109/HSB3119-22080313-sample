@@ -13,6 +13,7 @@ We will use the provided data which come from Kaggle which is a excel file Train
 2.2. Variable
 
 2.2.1. Data dictionary
+<br>
 | Cột 1      | Cột 2      | Cột 3      |
 |------------|------------|------------|
 | Hàng 1     | Dữ liệu 1  | Dữ liệu 2  |
