@@ -10,7 +10,9 @@ II. Methodology
 
 2.1. Source of data
 We will use the provided data which come from Kaggle which is a excel file Train.csv (we also uploaded it on Github). The data was recorded during the incident, and it contains numorous information of 890 passagers on that ship. 
+<br>
 2.2. Variable
+<br>
 
 2.2.1. Data dictionary
 <br>
@@ -126,11 +128,16 @@ While the chart did not indicate that if you are a male, the percentage that you
 ![image](https://github.com/user-attachments/assets/e06f85cb-73a1-4959-bee1-c8fd22821133)
 <br>
 This bar chart was made to compare the survival rate of each class in the Pclass with:
+<br>
 •	1 - First class (the highest class)
+<br>
 •	2 - Second class
+<br>
 •	3 - Third class.
 It is clearly to see the higher the class ticket that we bought, the more survival rate that we will have.
+<br>
 2.4.3 Density plot
+<br>
 ![image](https://github.com/user-attachments/assets/8d2ac81b-5d74-4094-b65d-5dbf48f65ab7)
 <br>
 The chart shows the age distribution of passengers who survived and those who did not survive in the Titanic case.
@@ -172,6 +179,26 @@ As we can see, Sex and Pclass has a big impact on the model and Age and Embarked
 3.2. KNN 
 For KNN model, we run a few tools to optimize the k values and the k value that we choose is 23.
 After testing the model, it gives us a confusion matrix that we will visualize by a heat map. 
+<br>
+![image](https://github.com/user-attachments/assets/de23aaa5-d03e-4d0f-8c7f-2ef9f81aceea)
+<br>
+Different color represents the density of the value for it part of the matrix. And similarly, to the logistic regression, most of the predicted value is right. But comparing to the logistic model, KNN has a slightly better accuracy (74%, comparing to 72% of logistic regression model) and it also predicted non-survived (true negative value) better. 
+We also added a ROC curve, which indicating that the model performance quite well. 
+<br>
+![image](https://github.com/user-attachments/assets/a4866a25-bae8-442d-ab37-3887e4df8935)
+<br>
+For better comparing, we use a barchart to visualize the metrics of two models.
+<br>
+![image](https://github.com/user-attachments/assets/0b7b219a-3226-4760-8fc9-07c8d8c635df)
+<br>
+It can tell from the model that KNN is better in recognizing the negative value with specificity higher than the outcome of the logistic regression. It also predicted the positive value with more accuracy, but logistic model makes less error than KNN model, according to the high recall. The result above can be explained as the logistic regression model is created to have at least false negative value. When balancing both precision and recall we got f1 score which the value of logistic regression model is little bit higher indicate that logistic model has a better performs in predict the positive values. But in general, knn seem to be a little bit better than the logistic regression as it has higher accuracy.
+<br>
+IV. Conclusion
+<br>
+As the feature importance analysis of the logistic model indicated that Sex and Pclass have a bigger impact on the model while Age and Embarked. This can be explained as women is often be prioritised in an incident and high social-economic status have more chance to access to the rescue, so it has a strong relationship with the outcome. For Age and Embarked values, it can be explained by the Facetgrid that we make as we can see that the distribution for survived and non-survived is quite similar, so the pattern between the age and the survived rate is not strong. For Embarked, from qualitative perspective, we hardly can see the relationship between the port that start traveling and the survival rate of ourselves in the first place, so deeper research needs to be taken to understand this relationship between it.
+<br>
+From our perspective, to increase the accuracy of both models, the data need to have less null value, as we indicate in the 2.3, there are 177 rows is missing, which is around 20% of the given data, itdecrease the accuracy of both model and might be the reason why the coefficient of Age is low. Beside, the provided data also have a limited variables and some of it can not be used for analysis (like name, ticket number, cabin) make it might make the model underfitting.
+
 
 
 
