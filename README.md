@@ -120,3 +120,4 @@ While the chart did not indicate that if you are a male, the percentage that you
 2.4.2. Bar Chart about PClass and Survived
 
 ![image](https://github.com/user-attachments/assets/e06f85cb-73a1-4959-bee1-c8fd22821133)
+.    km
